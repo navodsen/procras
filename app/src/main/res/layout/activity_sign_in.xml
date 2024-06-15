@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_scroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Welcome"
+    android:background="#0D0D0D"
+    android:padding="30dp"
+    android:transitionName="transition_login"
+    >
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="30dp">
+
+    <ImageView
+        android:id="@+id/login_back_button"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:padding="5dp"
+        android:transitionName="transition_login_back"
+        android:onClick="callWelcomeScreen"
+        android:src="@drawable/back_button" />
+
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/phlogo" />
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="30dp">
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Username"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:textColor="#000000"
+                    android:inputType="text"/>
+
+                <EditText
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:hint="Password"
+                    android:background="@drawable/rounded_edittext_background"
+                    android:textColor="#000000"
+                    android:inputType="textPassword"/>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"/>
+
+            <Button
+                android:id="@+id/confirm_login_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/gradient_background"
+                android:text="Login"
+                android:textColor="@color/white"
+                app:strokeColor="#000000"
+                android:layout_gravity="center"
+                android:onClick="callDashboardScreen"
+                android:transitionName="transition_confirm_login_button"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+   
